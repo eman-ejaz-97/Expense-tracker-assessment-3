@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Simple, transparent pricing for Smart Expense Tracking System. Choose the plan that fits your needs."
+    />
+    <meta
+      name="keywords"
+      content="pricing, subscription plans, expense tracker pricing, budget management cost"
+    />
+    <meta
+      name="author"
+      content="Smart Expense Tracking System - Student ID: 20034038"
+    />
+    <title>Pricing | Smart Expense Tracking System</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="header__inner">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Smart Expense Tracker Home"
+        >
+          <span class="logo__icon" aria-hidden="true">$</span>
+          <span>ExpenseTracker</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li><a href="features.html" class="nav__link">Features</a></li>
+            <li><a href="pricing.html" class="nav__link active">Pricing</a></li>
+            <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Page Hero -->
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="container">
+          <h1 id="page-title" class="page-hero__title">
+            Simple, Transparent Pricing
+          </h1>
+          <p class="page-hero__subtitle">
+            Choose the plan that fits your needs. All plans include a 14-day
+            free trial.
+          </p>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="section" aria-labelledby="pricing-title">
+        <div class="container">
+          <!-- Billing Toggle -->
+          <div
+            class="pricing-toggle"
+            role="group"
+            aria-label="Billing frequency"
+          >
+            <span class="pricing-toggle__label active" id="monthly-label"
+              >Monthly</span
+            >
+            <button
+              class="pricing-toggle__switch"
+              id="billing-toggle"
+              aria-pressed="false"
+              aria-label="Toggle between monthly and yearly billing"
+            >
+              <span class="sr-only">Toggle billing frequency</span>
+            </button>
+            <span class="pricing-toggle__label" id="yearly-label">Yearly</span>
+            <span class="pricing-toggle__badge">Save 20%</span>
+          </div>
+
+          <h2 id="pricing-title" class="sr-only">Pricing Plans</h2>
+
+          <!-- Pricing Cards -->
+          <div class="pricing-grid">
+            <!-- Basic Plan -->
+            <article
+              class="pricing-card animate-on-scroll"
+              aria-labelledby="basic-title"
+            >
+              <h3 id="basic-title" class="pricing-card__name">Basic</h3>
+              <div class="pricing-card__price" aria-label="9 dollars per month">
+                <sup>$</sup><span class="price-value">9</span
+                ><span>/month</span>
+              </div>
+              <p style="color: var(--medium-gray); font-size: 0.9rem">
+                Perfect for individuals getting started
+              </p>
+              <ul class="pricing-card__features">
+                <li class="pricing-card__feature">Up to 3 bank accounts</li>
+                <li class="pricing-card__feature">Basic expense tracking</li>
+                <li class="pricing-card__feature">Monthly reports</li>
+                <li class="pricing-card__feature">Email support</li>
+                <li
+                  class="pricing-card__feature pricing-card__feature--disabled"
+                >
+                  AI categorization
+                </li>
+                <li
+                  class="pricing-card__feature pricing-card__feature--disabled"
+                >
+                  Custom categories
+                </li>
+                <li
+                  class="pricing-card__feature pricing-card__feature--disabled"
+                >
+                  Team access
+                </li>
+              </ul>
+              <a
+                href="contact.html"
+                class="btn btn--secondary"
+                style="width: 100%"
+                >Get Started</a
+              >
+            </article>
+
+            <!-- Pro Plan (Featured) -->
+            <article
+              class="pricing-card pricing-card--featured animate-on-scroll"
+              aria-labelledby="pro-title"
+            >
+              <span class="pricing-card__badge">Most Popular</span>
+              <h3 id="pro-title" class="pricing-card__name">Professional</h3>
+              <div
+                class="pricing-card__price"
+                aria-label="29 dollars per month"
+              >
+                <sup>$</sup><span class="price-value">29</span
+                ><span>/month</span>
+              </div>
+              <p style="color: var(--medium-gray); font-size: 0.9rem">
+                Best for professionals & small teams
+              </p>
+              <ul class="pricing-card__features">
+                <li class="pricing-card__feature">Unlimited bank accounts</li>
+                <li class="pricing-card__feature">Advanced expense tracking</li>
+                <li class="pricing-card__feature">Weekly & monthly reports</li>
+                <li class="pricing-card__feature">Priority email support</li>
+                <li class="pricing-card__feature">AI categorization</li>
+                <li class="pricing-card__feature">Custom categories</li>
+                <li
+                  class="pricing-card__feature pricing-card__feature--disabled"
+                >
+                  Team access (up to 5)
+                </li>
+              </ul>
+              <a
+                href="contact.html"
+                class="btn btn--primary"
+                style="width: 100%"
+                >Get Started</a
+              >
+            </article>
+
+            <!-- Enterprise Plan -->
+            <article
+              class="pricing-card animate-on-scroll"
+              aria-labelledby="enterprise-title"
+            >
+              <h3 id="enterprise-title" class="pricing-card__name">
+                Enterprise
+              </h3>
+              <div
+                class="pricing-card__price"
+                aria-label="79 dollars per month"
+              >
+                <sup>$</sup><span class="price-value">79</span
+                ><span>/month</span>
+              </div>
+              <p style="color: var(--medium-gray); font-size: 0.9rem">
+                For businesses with advanced needs
+              </p>
+              <ul class="pricing-card__features">
+                <li class="pricing-card__feature">Unlimited everything</li>
+                <li class="pricing-card__feature">
+                  Enterprise expense tracking
+                </li>
+                <li class="pricing-card__feature">Custom report schedules</li>
+                <li class="pricing-card__feature">
+                  24/7 phone & email support
+                </li>
+                <li class="pricing-card__feature">
+                  Advanced AI categorization
+                </li>
+                <li class="pricing-card__feature">Custom categories & rules</li>
+                <li class="pricing-card__feature">Unlimited team access</li>
+              </ul>
+              <a
+                href="contact.html"
+                class="btn btn--secondary"
+                style="width: 100%"
+                >Contact Sales</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparison Table Section -->
+      <section
+        class="section section--light"
+        aria-labelledby="comparison-title"
+      >
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="comparison-title">Compare Plans</h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                color: var(--medium-gray);
+              "
+            >
+              A detailed comparison of all features across our plans.
+            </p>
+          </header>
+
+          <div style="overflow-x: auto">
+            <table class="comparison-table" role="table">
+              <caption class="sr-only">
+                Feature comparison across Basic, Professional, and Enterprise
+                plans
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Feature</th>
+                  <th scope="col">Basic</th>
+                  <th scope="col">Professional</th>
+                  <th scope="col">Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Bank Accounts</td>
+                  <td>3</td>
+                  <td>Unlimited</td>
+                  <td>Unlimited</td>
+                </tr>
+                <tr>
+                  <td>Expense Tracking</td>
+                  <td>Basic</td>
+                  <td>Advanced</td>
+                  <td>Enterprise</td>
+                </tr>
+                <tr>
+                  <td>AI Categorization</td>
+                  <td>
+                    <span class="cross" aria-label="Not included">✗</span>
+                  </td>
+                  <td><span class="check" aria-label="Included">✓</span></td>
+                  <td><span class="check" aria-label="Included">✓</span></td>
+                </tr>
+                <tr>
+                  <td>Custom Categories</td>
+                  <td>
+                    <span class="cross" aria-label="Not included">✗</span>
+                  </td>
+                  <td><span class="check" aria-label="Included">✓</span></td>
+                  <td><span class="check" aria-label="Included">✓</span></td>
+                </tr>
+                <tr>
+                  <td>Receipt Scanner</td>
+                  <td>10/month</td>
+                  <td>100/month</td>
+                  <td>Unlimited</td>
+                </tr>
+                <tr>
+                  <td>Reports</td>
+                  <td>Monthly</td>
+                  <td>Weekly & Monthly</td>
+                  <td>Custom Schedule</td>
+                </tr>
+                <tr>
+                  <td>Export Options</td>
+                  <td>CSV</td>
+                  <td>CSV, PDF</td>
+                  <td>CSV, PDF, Excel, API</td>
+                </tr>
+                <tr>
+                  <td>Team Members</td>
+                  <td>
+                    <span class="cross" aria-label="Not included">✗</span>
+                  </td>
+                  <td>Up to 5</td>
+                  <td>Unlimited</td>
+                </tr>
+                <tr>
+                  <td>Multi-Currency</td>
+                  <td>
+                    <span class="cross" aria-label="Not included">✗</span>
+                  </td>
+                  <td><span class="check" aria-label="Included">✓</span></td>
+                  <td><span class="check" aria-label="Included">✓</span></td>
+                </tr>
+                <tr>
+                  <td>API Access</td>
+                  <td>
+                    <span class="cross" aria-label="Not included">✗</span>
+                  </td>
+                  <td>
+                    <span class="cross" aria-label="Not included">✗</span>
+                  </td>
+                  <td><span class="check" aria-label="Included">✓</span></td>
+                </tr>
+                <tr>
+                  <td>Priority Support</td>
+                  <td>
+                    <span class="cross" aria-label="Not included">✗</span>
+                  </td>
+                  <td><span class="check" aria-label="Included">✓</span></td>
+                  <td><span class="check" aria-label="Included">✓</span></td>
+                </tr>
+                <tr>
+                  <td>Dedicated Account Manager</td>
+                  <td>
+                    <span class="cross" aria-label="Not included">✗</span>
+                  </td>
+                  <td>
+                    <span class="cross" aria-label="Not included">✗</span>
+                  </td>
+                  <td><span class="check" aria-label="Included">✓</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section" aria-labelledby="faq-title">
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="faq-title">Frequently Asked Questions</h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                color: var(--medium-gray);
+              "
+            >
+              Got questions? We've got answers.
+            </p>
+          </header>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I change my plan later?</span>
+                <span class="faq-question__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer__content">
+                  <p>
+                    Absolutely! You can upgrade or downgrade your plan at any
+                    time. When you upgrade, you'll be prorated for the remainder
+                    of your billing cycle. When you downgrade, the new rate will
+                    take effect at your next billing date.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is there a free trial?</span>
+                <span class="faq-question__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer__content">
+                  <p>
+                    Yes! All plans come with a 14-day free trial with full
+                    access to all features. No credit card required to start.
+                    You can explore everything before making a commitment.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>What payment methods do you accept?</span>
+                <span class="faq-question__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer__content">
+                  <p>
+                    We accept all major credit cards (Visa, Mastercard, American
+                    Express, Discover), PayPal, and bank transfers for
+                    Enterprise plans. All payments are processed securely
+                    through our payment partners.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I cancel anytime?</span>
+                <span class="faq-question__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer__content">
+                  <p>
+                    Yes, you can cancel your subscription at any time with no
+                    questions asked. Your access will continue until the end of
+                    your current billing period. We don't believe in lock-in
+                    contracts.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is my data secure?</span>
+                <span class="faq-question__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer__content">
+                  <p>
+                    Security is our top priority. We use bank-level 256-bit AES
+                    encryption, secure data centers, and never store your bank
+                    credentials. We're also SOC 2 Type II certified and GDPR
+                    compliant.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you offer discounts for nonprofits or students?</span>
+                <span class="faq-question__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer__content">
+                  <p>
+                    Yes! We offer 50% off for verified nonprofits and students.
+                    Contact our support team with your nonprofit registration or
+                    student ID to get your discount code.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="container">
+          <h2 id="cta-title" class="cta__title">Need a Custom Solution?</h2>
+          <p class="cta__text">
+            Have specific requirements? Our team can create a tailored plan that
+            fits your organization's unique needs.
+          </p>
+          <div class="cta__buttons">
+            <a href="contact.html" class="btn btn--white btn--lg"
+              >Contact Sales</a
+            >
+            <a href="features.html" class="btn btn--outline-white btn--lg"
+              >View All Features</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <span class="footer__logo-icon" aria-hidden="true">$</span>
+              <span>ExpenseTracker</span>
+            </div>
+            <p class="footer__text">
+              Smart Expense Tracking System helps you take control of your
+              finances with real-time tracking, intelligent categorization, and
+              actionable insights.
+            </p>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Quick Links</h3>
+            <nav class="footer__links" aria-label="Footer quick links">
+              <a href="index.html" class="footer__link">Home</a>
+              <a href="about.html" class="footer__link">About Us</a>
+              <a href="features.html" class="footer__link">Features</a>
+              <a href="pricing.html" class="footer__link">Pricing</a>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Resources</h3>
+            <nav class="footer__links" aria-label="Footer resources">
+              <a href="gallery.html" class="footer__link">Gallery</a>
+              <a href="contact.html" class="footer__link">Contact</a>
+              <a href="#" class="footer__link">Help Center</a>
+              <a href="#" class="footer__link">Blog</a>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Legal</h3>
+            <nav class="footer__links" aria-label="Footer legal">
+              <a href="#" class="footer__link">Privacy Policy</a>
+              <a href="#" class="footer__link">Terms of Service</a>
+              <a href="#" class="footer__link">Cookie Policy</a>
+              <a href="#" class="footer__link">Security</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2025 Smart Expense Tracking System. All rights reserved.
+            <br />
+            Assessment 3 - Student ID: 20034038
+          </p>
+          <div class="footer__socials">
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Facebook"
+            >
+              <span aria-hidden="true">f</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Twitter"
+            >
+              <span aria-hidden="true">𝕏</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on LinkedIn"
+            >
+              <span aria-hidden="true">in</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Instagram"
+            >
+              <span aria-hidden="true">📷</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

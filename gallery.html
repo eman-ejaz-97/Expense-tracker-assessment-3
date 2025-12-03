@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="View screenshots, videos, and visual media showcasing the Smart Expense Tracking System interface and features."
+    />
+    <meta
+      name="keywords"
+      content="expense tracker screenshots, app gallery, product demo, interface preview"
+    />
+    <meta
+      name="author"
+      content="Smart Expense Tracking System - Student ID: 20034038"
+    />
+    <title>Gallery | Smart Expense Tracking System</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="header__inner">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Smart Expense Tracker Home"
+        >
+          <span class="logo__icon" aria-hidden="true">$</span>
+          <span>ExpenseTracker</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li><a href="features.html" class="nav__link">Features</a></li>
+            <li><a href="pricing.html" class="nav__link">Pricing</a></li>
+            <li><a href="gallery.html" class="nav__link active">Gallery</a></li>
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Page Hero -->
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="container">
+          <h1 id="page-title" class="page-hero__title">Gallery</h1>
+          <p class="page-hero__subtitle">
+            Explore screenshots, videos, and visuals showcasing the Smart
+            Expense Tracking System in action.
+          </p>
+        </div>
+      </section>
+
+      <!-- Image Gallery Section -->
+      <section class="section" aria-labelledby="gallery-title">
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="gallery-title">Product Screenshots</h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                color: var(--medium-gray);
+              "
+            >
+              Click on any image to view it in full size.
+            </p>
+          </header>
+
+          <!-- Gallery Filters -->
+          <div
+            class="gallery-filters"
+            role="group"
+            aria-label="Filter gallery images"
+          >
+            <button class="gallery-filter active" data-filter="all">All</button>
+            <button class="gallery-filter" data-filter="dashboard">
+              Dashboard
+            </button>
+            <button class="gallery-filter" data-filter="reports">
+              Reports
+            </button>
+            <button class="gallery-filter" data-filter="mobile">Mobile</button>
+          </div>
+
+          <!-- Gallery Grid -->
+          <div class="gallery-grid" role="list">
+            <div
+              class="gallery-item gallery-item--large"
+              data-category="dashboard"
+              role="listitem"
+            >
+              <img
+                src="images/gallery-1.png"
+                alt="Main dashboard overview showing expense summary and recent transactions"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__title">Main Dashboard</span>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-category="reports" role="listitem">
+              <img
+                src="images/gallery-2.png"
+                alt="Monthly expense report with category breakdown chart"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__title">Monthly Reports</span>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-category="dashboard" role="listitem">
+              <img
+                src="images/gallery-3.png"
+                alt="Budget tracking view with progress bars for each category"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__title">Budget Tracking</span>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-category="mobile" role="listitem">
+              <img
+                src="images/gallery-4.png"
+                alt="Mobile app home screen showing quick expense entry"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__title">Mobile App</span>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-category="reports" role="listitem">
+              <img
+                src="images/gallery-5.png"
+                alt="Annual spending trends visualization with yearly comparison"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__title">Spending Trends</span>
+              </div>
+            </div>
+
+            <div
+              class="gallery-item gallery-item--large"
+              data-category="dashboard"
+              role="listitem"
+            >
+              <img
+                src="images/gallery-6.png"
+                alt="Transaction list view with search and filter options"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__title">Transaction History</span>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-category="mobile" role="listitem">
+              <img
+                src="images/gallery-7.png"
+                alt="Mobile receipt scanner capturing expense details"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__title">Receipt Scanner</span>
+              </div>
+            </div>
+
+            <div class="gallery-item" data-category="reports" role="listitem">
+              <img
+                src="images/gallery-8.png"
+                alt="Category breakdown pie chart showing spending distribution"
+                loading="lazy"
+              />
+              <div class="gallery-item__overlay">
+                <span class="gallery-item__title">Category Analysis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Section -->
+      <section class="section section--light" aria-labelledby="videos-title">
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="videos-title">Video Tutorials</h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                color: var(--medium-gray);
+              "
+            >
+              Watch these videos to learn how to get the most out of Smart
+              Expense Tracker.
+            </p>
+          </header>
+
+          <div style="max-width: 800px; margin: 0 auto;">
+            <div class="animate-on-scroll">
+              <video
+                controls
+                style="
+                  width: 100%;
+                  border-radius: var(--radius-md);
+                  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+                "
+                poster="images/video-thumb-1.svg"
+              >
+                <source src="videos/Smart_Expense_Tracker_Video_Generation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div style="text-align: center; margin-top: var(--spacing-md);">
+                <h3 style="color: var(--primary-color); margin-bottom: var(--spacing-sm);">Smart Expense Tracker Demo</h3>
+                <p style="color: var(--medium-gray);">Watch how our app helps you manage your finances effortlessly</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screenshots Section -->
+      <section class="section" aria-labelledby="screenshots-title">
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="screenshots-title">Feature Highlights</h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                color: var(--medium-gray);
+              "
+            >
+              Detailed looks at our most powerful features.
+            </p>
+          </header>
+
+          <div class="features-grid">
+            <article class="feature-card animate-on-scroll">
+              <img
+                src="images/ss-1.png"
+                alt="Smart categorization feature showing AI-powered expense sorting"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: var(--radius-md);
+                  margin-bottom: var(--spacing-md);
+                "
+                loading="lazy"
+              />
+              <h3 class="feature-card__title">Smart Categorization</h3>
+              <p class="feature-card__text">
+                Our AI automatically sorts your expenses into the right
+                categories with incredible accuracy.
+              </p>
+            </article>
+
+            <article class="feature-card animate-on-scroll">
+              <img
+                src="images/ss-2.png"
+                alt="Budget alerts feature showing notification system for spending limits"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: var(--radius-md);
+                  margin-bottom: var(--spacing-md);
+                "
+                loading="lazy"
+              />
+              <h3 class="feature-card__title">Budget Alerts</h3>
+              <p class="feature-card__text">
+                Never overspend again with customizable alerts that notify you
+                before hitting your limits.
+              </p>
+            </article>
+
+            <article class="feature-card animate-on-scroll">
+              <img
+                src="images/ss-3.png"
+                alt="Insights dashboard showing spending patterns and savings opportunities"
+                style="
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                  border-radius: var(--radius-md);
+                  margin-bottom: var(--spacing-md);
+                "
+                loading="lazy"
+              />
+              <h3 class="feature-card__title">Spending Insights</h3>
+              <p class="feature-card__text">
+                Get personalized insights and recommendations to optimize your
+                spending habits.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Carousel Section -->
+      <section class="section section--light" aria-labelledby="carousel-title">
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="carousel-title">App Showcase</h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                color: var(--medium-gray);
+              "
+            >
+              Swipe through our beautiful interface designs.
+            </p>
+          </header>
+
+          <div
+            class="carousel"
+            role="region"
+            aria-roledescription="carousel"
+            aria-label="App screenshots carousel"
+          >
+            <div class="carousel__track" id="carousel-track">
+              <div
+                class="carousel__slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Slide 1 of 4"
+              >
+                <img
+                  src="images/carousel-1.png"
+                  alt="Dashboard overview with expense summary widgets"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="carousel__slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Slide 2 of 4"
+              >
+                <img
+                  src="images/carousel-2.png"
+                  alt="Analytics page showing spending charts and graphs"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="carousel__slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Slide 3 of 4"
+              >
+                <img
+                  src="images/carousel-3.png"
+                  alt="Settings page with customization options"
+                  loading="lazy"
+                />
+              </div>
+              <div
+                class="carousel__slide"
+                role="group"
+                aria-roledescription="slide"
+                aria-label="Slide 4 of 4"
+              >
+                <img
+                  src="images/carousel-4.png"
+                  alt="Mobile responsive view of the expense tracker"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+
+            <button
+              class="carousel__nav carousel__nav--prev"
+              aria-label="Previous slide"
+            >
+              ❮
+            </button>
+            <button
+              class="carousel__nav carousel__nav--next"
+              aria-label="Next slide"
+            >
+              ❯
+            </button>
+
+            <div
+              class="carousel__dots"
+              role="tablist"
+              aria-label="Carousel pagination"
+            >
+              <button
+                class="carousel__dot active"
+                role="tab"
+                aria-selected="true"
+                aria-label="Go to slide 1"
+              ></button>
+              <button
+                class="carousel__dot"
+                role="tab"
+                aria-selected="false"
+                aria-label="Go to slide 2"
+              ></button>
+              <button
+                class="carousel__dot"
+                role="tab"
+                aria-selected="false"
+                aria-label="Go to slide 3"
+              ></button>
+              <button
+                class="carousel__dot"
+                role="tab"
+                aria-selected="false"
+                aria-label="Go to slide 4"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="container">
+          <h2 id="cta-title" class="cta__title">Ready to See It in Action?</h2>
+          <p class="cta__text">
+            Start your free trial today and experience the power of smart
+            expense tracking firsthand.
+          </p>
+          <div class="cta__buttons">
+            <a href="pricing.html" class="btn btn--white btn--lg"
+              >Start Free Trial</a
+            >
+            <a href="contact.html" class="btn btn--outline-white btn--lg"
+              >Request Demo</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Lightbox -->
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image lightbox"
+    >
+      <button class="lightbox__close" aria-label="Close lightbox">✕</button>
+      <button
+        class="lightbox__nav lightbox__nav--prev"
+        aria-label="Previous image"
+      >
+        ❮
+      </button>
+      <div class="lightbox__content">
+        <img src="" alt="" id="lightbox-image" />
+      </div>
+      <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">
+        ❯
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <span class="footer__logo-icon" aria-hidden="true">$</span>
+              <span>ExpenseTracker</span>
+            </div>
+            <p class="footer__text">
+              Smart Expense Tracking System helps you take control of your
+              finances with real-time tracking, intelligent categorization, and
+              actionable insights.
+            </p>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Quick Links</h3>
+            <nav class="footer__links" aria-label="Footer quick links">
+              <a href="index.html" class="footer__link">Home</a>
+              <a href="about.html" class="footer__link">About Us</a>
+              <a href="features.html" class="footer__link">Features</a>
+              <a href="pricing.html" class="footer__link">Pricing</a>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Resources</h3>
+            <nav class="footer__links" aria-label="Footer resources">
+              <a href="gallery.html" class="footer__link">Gallery</a>
+              <a href="contact.html" class="footer__link">Contact</a>
+              <a href="#" class="footer__link">Help Center</a>
+              <a href="#" class="footer__link">Blog</a>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Legal</h3>
+            <nav class="footer__links" aria-label="Footer legal">
+              <a href="#" class="footer__link">Privacy Policy</a>
+              <a href="#" class="footer__link">Terms of Service</a>
+              <a href="#" class="footer__link">Cookie Policy</a>
+              <a href="#" class="footer__link">Security</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2025 Smart Expense Tracking System. All rights reserved.
+            <br />
+            Assessment 3 - Student ID: 20034038
+          </p>
+          <div class="footer__socials">
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Facebook"
+            >
+              <span aria-hidden="true">f</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Twitter"
+            >
+              <span aria-hidden="true">𝕏</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on LinkedIn"
+            >
+              <span aria-hidden="true">in</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Instagram"
+            >
+              <span aria-hidden="true">📷</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

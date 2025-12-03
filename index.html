@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Smart Expense Tracking System - Track expenses in real-time, categorize spending automatically, generate reports, and set custom budget alerts."
+    />
+    <meta
+      name="keywords"
+      content="expense tracking, budget management, financial technology, expense reports, budget alerts"
+    />
+    <meta
+      name="author"
+      content="Smart Expense Tracking System - Student ID: 20034038"
+    />
+    <title>Smart Expense Tracking System | Home</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="header__inner">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Smart Expense Tracker Home"
+        >
+          <span class="logo__icon" aria-hidden="true">$</span>
+          <span>ExpenseTracker</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link active">Home</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li><a href="features.html" class="nav__link">Features</a></li>
+            <li><a href="pricing.html" class="nav__link">Pricing</a></li>
+            <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+            <li><a href="contact.html" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <span class="hero__badge">New Release 2024</span>
+              <h1 id="hero-title" class="hero__title">
+                Take Control of Your Finances Today
+              </h1>
+              <p class="hero__subtitle">
+                Track expenses in real-time, categorize spending automatically,
+                generate insightful reports, and set custom budget alerts. Your
+                financial wellness journey starts here.
+              </p>
+              <div class="hero__buttons">
+                <a href="pricing.html" class="btn btn--primary btn--lg"
+                  >Get Started Free</a
+                >
+                <a href="features.html" class="btn btn--secondary btn--lg"
+                  >Learn More</a
+                >
+              </div>
+              <div class="hero__stats">
+                <div class="stat">
+                  <div class="stat__number">50K+</div>
+                  <div class="stat__label">Active Users</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">$2M+</div>
+                  <div class="stat__label">Tracked Monthly</div>
+                </div>
+                <div class="stat">
+                  <div class="stat__number">4.9★</div>
+                  <div class="stat__label">User Rating</div>
+                </div>
+              </div>
+            </div>
+            <div class="hero__image">
+              <img
+                src="images/hero-dashboard.png"
+                alt="Smart Expense Tracker dashboard showing expense analytics and budget overview"
+                width="600"
+                height="450"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="section section--light" aria-labelledby="features-title">
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="features-title">Why Choose Our Expense Tracker?</h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                color: var(--medium-gray);
+              "
+            >
+              Powerful features designed to simplify your financial management
+              and help you achieve your savings goals.
+            </p>
+          </header>
+
+          <div class="features-grid">
+            <article class="feature-card animate-on-scroll">
+              <div class="feature-card__icon" aria-hidden="true">💰</div>
+              <h3 class="feature-card__title">Real-Time Tracking</h3>
+              <p class="feature-card__text">
+                Monitor your expenses as they happen. Every transaction is
+                instantly recorded and categorized for your convenience.
+              </p>
+            </article>
+
+            <article class="feature-card animate-on-scroll">
+              <div class="feature-card__icon" aria-hidden="true">⏱️</div>
+              <h3 class="feature-card__title">Smart Automation</h3>
+              <p class="feature-card__text">
+                AI-powered categorization automatically sorts your expenses,
+                saving you hours of manual data entry each month.
+              </p>
+            </article>
+
+            <article class="feature-card animate-on-scroll">
+              <div class="feature-card__icon" aria-hidden="true">🔔</div>
+              <h3 class="feature-card__title">Budget Alerts</h3>
+              <p class="feature-card__text">
+                Set custom spending limits and receive instant notifications
+                when you're approaching your budget thresholds.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Partners Section -->
+      <section class="partners" aria-labelledby="partners-title">
+        <div class="container">
+          <h2 id="partners-title" class="partners__title">
+            Trusted by Industry Leaders
+          </h2>
+          <div class="partners__grid">
+            <img
+              src="images/partner-visa.png"
+              alt="Visa"
+              class="partner-logo"
+              width="100"
+              height="40"
+            />
+            <img
+              src="images/partner-mastercard.png"
+              alt="Mastercard"
+              class="partner-logo"
+              width="100"
+              height="40"
+            />
+            <img
+              src="images/partner-paypal.png"
+              alt="PayPal"
+              class="partner-logo"
+              width="100"
+              height="40"
+            />
+            <img
+              src="images/partner-stripe.png"
+              alt="Stripe"
+              class="partner-logo"
+              width="100"
+              height="40"
+            />
+            <img
+              src="images/partner-quickbooks.png"
+              alt="QuickBooks"
+              class="partner-logo"
+              width="100"
+              height="40"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works Section -->
+      <section class="section" aria-labelledby="how-it-works-title">
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="how-it-works-title">How It Works</h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                color: var(--medium-gray);
+              "
+            >
+              Get started in three simple steps and begin your journey to
+              financial freedom.
+            </p>
+          </header>
+
+          <div class="steps">
+            <div class="step animate-on-scroll">
+              <h3 class="step__title">Create Your Account</h3>
+              <p class="step__text">
+                Sign up in seconds with your email or connect through your
+                preferred social platform. No credit card required.
+              </p>
+            </div>
+
+            <div class="step animate-on-scroll">
+              <h3 class="step__title">Link Your Accounts</h3>
+              <p class="step__text">
+                Securely connect your bank accounts, credit cards, and payment
+                platforms to automatically import transactions.
+              </p>
+            </div>
+
+            <div class="step animate-on-scroll">
+              <h3 class="step__title">Track & Optimize</h3>
+              <p class="step__text">
+                Watch your spending patterns emerge, set budgets, receive
+                insights, and make smarter financial decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Section -->
+      <section
+        class="section section--light"
+        aria-labelledby="testimonials-title"
+      >
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="testimonials-title">What Our Users Say</h2>
+          </header>
+
+          <div class="features-grid">
+            <article class="feature-card animate-on-scroll">
+              <p
+                class="feature-card__text"
+                style="font-style: italic; margin-bottom: var(--spacing-md)"
+              >
+                "This app completely transformed how I manage my finances. I've
+                saved over $3,000 in just six months!"
+              </p>
+              <p style="font-weight: 600; color: var(--primary-color)">
+                — Sarah M., Small Business Owner
+              </p>
+            </article>
+
+            <article class="feature-card animate-on-scroll">
+              <p
+                class="feature-card__text"
+                style="font-style: italic; margin-bottom: var(--spacing-md)"
+              >
+                "The automatic categorization is incredible. It saves me hours
+                every week that I used to spend on spreadsheets."
+              </p>
+              <p style="font-weight: 600; color: var(--primary-color)">
+                — James K., Freelance Designer
+              </p>
+            </article>
+
+            <article class="feature-card animate-on-scroll">
+              <p
+                class="feature-card__text"
+                style="font-style: italic; margin-bottom: var(--spacing-md)"
+              >
+                "Finally, an expense tracker that's both powerful and easy to
+                use. Highly recommend to anyone serious about budgeting."
+              </p>
+              <p style="font-weight: 600; color: var(--primary-color)">
+                — Lisa T., Marketing Director
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="container">
+          <h2 id="cta-title" class="cta__title">
+            Ready to Take Control of Your Finances?
+          </h2>
+          <p class="cta__text">
+            Join over 50,000 users who are already saving smarter. Start your
+            free trial today—no credit card required.
+          </p>
+          <div class="cta__buttons">
+            <a href="pricing.html" class="btn btn--white btn--lg"
+              >Get Started Now</a
+            >
+            <a href="contact.html" class="btn btn--outline-white btn--lg"
+              >Contact Sales</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <span class="footer__logo-icon" aria-hidden="true">$</span>
+              <span>ExpenseTracker</span>
+            </div>
+            <p class="footer__text">
+              Smart Expense Tracking System helps you take control of your
+              finances with real-time tracking, intelligent categorization, and
+              actionable insights.
+            </p>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Quick Links</h3>
+            <nav class="footer__links" aria-label="Footer quick links">
+              <a href="index.html" class="footer__link">Home</a>
+              <a href="about.html" class="footer__link">About Us</a>
+              <a href="features.html" class="footer__link">Features</a>
+              <a href="pricing.html" class="footer__link">Pricing</a>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Resources</h3>
+            <nav class="footer__links" aria-label="Footer resources">
+              <a href="gallery.html" class="footer__link">Gallery</a>
+              <a href="contact.html" class="footer__link">Contact</a>
+              <a href="#" class="footer__link">Help Center</a>
+              <a href="#" class="footer__link">Blog</a>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Legal</h3>
+            <nav class="footer__links" aria-label="Footer legal">
+              <a href="#" class="footer__link">Privacy Policy</a>
+              <a href="#" class="footer__link">Terms of Service</a>
+              <a href="#" class="footer__link">Cookie Policy</a>
+              <a href="#" class="footer__link">Security</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2025 Smart Expense Tracking System. All rights reserved.
+            <br />
+            Assessment 3 - Student ID: 20034038
+          </p>
+          <div class="footer__socials">
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Facebook"
+            >
+              <span aria-hidden="true">f</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Twitter"
+            >
+              <span aria-hidden="true">𝕏</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on LinkedIn"
+            >
+              <span aria-hidden="true">in</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Instagram"
+            >
+              <span aria-hidden="true">📷</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

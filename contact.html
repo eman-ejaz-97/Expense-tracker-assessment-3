@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Smart Expense Tracking System - Get in touch with our team for support, sales inquiries, or partnership opportunities."
+    />
+    <meta
+      name="keywords"
+      content="contact us, customer support, expense tracker support, sales inquiry"
+    />
+    <meta
+      name="author"
+      content="Smart Expense Tracking System - Student ID: 20034038"
+    />
+    <title>Contact Us | Smart Expense Tracking System</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+      <div class="header__inner">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="Smart Expense Tracker Home"
+        >
+          <span class="logo__icon" aria-hidden="true">$</span>
+          <span>ExpenseTracker</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+          <span class="menu-toggle__bar"></span>
+        </button>
+
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="about.html" class="nav__link">About</a></li>
+            <li><a href="features.html" class="nav__link">Features</a></li>
+            <li><a href="pricing.html" class="nav__link">Pricing</a></li>
+            <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+            <li><a href="contact.html" class="nav__link active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Page Hero -->
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="container">
+          <h1 id="page-title" class="page-hero__title">Contact Us</h1>
+          <p class="page-hero__subtitle">
+            Have questions? We'd love to hear from you. Send us a message and
+            we'll respond as soon as possible.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" aria-labelledby="contact-form-title">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form">
+              <h2
+                id="contact-form-title"
+                style="margin-bottom: var(--spacing-lg)"
+              >
+                Send Us a Message
+              </h2>
+
+              <!-- Success Message -->
+              <div class="form-success" id="form-success" role="alert">
+                <p style="margin: 0">
+                  <strong>Thank you!</strong> Your message has been sent
+                  successfully. We'll get back to you within 24 hours.
+                </p>
+              </div>
+
+              <form id="contact-form" action="#" method="POST" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">
+                    Full Name <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Enter your full name"
+                    required
+                    minlength="2"
+                    maxlength="100"
+                    aria-describedby="name-error"
+                  />
+                  <span class="form-error" id="name-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">
+                    Email Address
+                    <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="Enter your email address"
+                    required
+                    aria-describedby="email-error"
+                  />
+                  <span class="form-error" id="email-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone" class="form-label"> Phone Number </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                    placeholder="Enter your phone number (optional)"
+                    aria-describedby="phone-error"
+                  />
+                  <span class="form-error" id="phone-error" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">
+                    Subject <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    class="form-select"
+                    required
+                    aria-describedby="subject-error"
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="sales">Sales Question</option>
+                    <option value="billing">Billing Issue</option>
+                    <option value="partnership">Partnership Opportunity</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span
+                    class="form-error"
+                    id="subject-error"
+                    role="alert"
+                  ></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">
+                    Message <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-textarea"
+                    placeholder="Type your message here..."
+                    required
+                    minlength="10"
+                    maxlength="2000"
+                    aria-describedby="message-error"
+                  ></textarea>
+                  <span
+                    class="form-error"
+                    id="message-error"
+                    role="alert"
+                  ></span>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn--primary btn--lg"
+                  style="width: 100%"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info">
+              <h2 style="margin-bottom: var(--spacing-lg)">Get in Touch</h2>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">✉️</div>
+                <div>
+                  <p class="contact-info__label">Email Us</p>
+                  <p class="contact-info__text">
+                    <a href="mailto:support@expensetracker.com"
+                      >20034038@students.koi.edu.au</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">📞</div>
+                <div>
+                  <p class="contact-info__label">Call Us</p>
+                  <p class="contact-info__text">
+                    <a href="tel:+1800123456">+1 (23) 123-4567</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">📍</div>
+                <div>
+                  <p class="contact-info__label">Visit Us</p>
+                  <p class="contact-info__text">
+                    1/59 Darby St<br />Newcastle, NSW 2300<br />Australia
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-info__item">
+                <div class="contact-info__icon" aria-hidden="true">🕐</div>
+                <div>
+                  <p class="contact-info__label">Business Hours</p>
+                  <p class="contact-info__text">
+                    Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM -
+                    2:00 PM<br />Sunday: Closed
+                  </p>
+                </div>
+              </div>
+
+              <!-- Social Media Links -->
+              <div style="margin-top: var(--spacing-xl)">
+                <p
+                  class="contact-info__label"
+                  style="margin-bottom: var(--spacing-sm)"
+                >
+                  Follow Us
+                </p>
+                <div class="social-links">
+                  <a
+                    href="#"
+                    class="social-link"
+                    aria-label="Follow us on Facebook"
+                    >f</a
+                  >
+                  <a
+                    href="#"
+                    class="social-link"
+                    aria-label="Follow us on Twitter"
+                    >𝕏</a
+                  >
+                  <a
+                    href="#"
+                    class="social-link"
+                    aria-label="Follow us on LinkedIn"
+                    >in</a
+                  >
+                  <a
+                    href="#"
+                    class="social-link"
+                    aria-label="Follow us on Instagram"
+                    >📷</a
+                  >
+                  <a
+                    href="#"
+                    class="social-link"
+                    aria-label="Follow us on YouTube"
+                    >▶</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="section section--light" aria-labelledby="map-title">
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="map-title">Find Us</h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                color: var(--medium-gray);
+              "
+            >
+              Visit our headquarters in the heart of Newcastle's business
+              district.
+            </p>
+          </header>
+
+          <div class="map-container">
+            <!-- Map placeholder - In a real implementation, this would be an embedded Google Map -->
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                  135deg,
+                  var(--primary-color) 0%,
+                  var(--primary-light) 100%
+                );
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                text-align: center;
+                padding: var(--spacing-lg);
+              "
+            >
+              <div>
+                <span
+                  style="
+                    font-size: 3rem;
+                    display: block;
+                    margin-bottom: var(--spacing-md);
+                  "
+                  >📍</span
+                >
+                <p
+                  style="
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-bottom: var(--spacing-sm);
+                  "
+                >
+                  1/59 Darby St, Newcastle
+                </p>
+                <p style="opacity: 0.9">
+                  Interactive map available with location services enabled
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section
+        class="section section--light"
+        aria-labelledby="contact-faq-title"
+      >
+        <div class="container">
+          <header class="text-center" style="margin-bottom: var(--spacing-xl)">
+            <h2 id="contact-faq-title">Frequently Asked Questions</h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto;
+                color: var(--medium-gray);
+              "
+            >
+              Quick answers to common questions.
+            </p>
+          </header>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>How quickly will I receive a response?</span>
+                <span class="faq-question__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer__content">
+                  <p>
+                    We aim to respond to all inquiries within 24 hours during
+                    business days. For urgent technical issues, our premium
+                    support customers receive responses within 4 hours.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you offer phone support?</span>
+                <span class="faq-question__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer__content">
+                  <p>
+                    Phone support is available for Professional and Enterprise
+                    plan subscribers during business hours. Basic plan users can
+                    reach us via email or the contact form.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I schedule a product demo?</span>
+                <span class="faq-question__icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer__content">
+                  <p>
+                    Absolutely! Select "Sales Question" in the contact form
+                    subject and mention that you'd like a demo. Our sales team
+                    will reach out to schedule a personalized walkthrough of our
+                    platform.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta" aria-labelledby="cta-title">
+        <div class="container">
+          <h2 id="cta-title" class="cta__title">Ready to Get Started?</h2>
+          <p class="cta__text">
+            Join thousands of users who trust Smart Expense Tracker to manage
+            their finances.
+          </p>
+          <div class="cta__buttons">
+            <a href="pricing.html" class="btn btn--white btn--lg"
+              >View Pricing</a
+            >
+            <a href="features.html" class="btn btn--outline-white btn--lg"
+              >Explore Features</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <span class="footer__logo-icon" aria-hidden="true">$</span>
+              <span>ExpenseTracker</span>
+            </div>
+            <p class="footer__text">
+              Smart Expense Tracking System helps you take control of your
+              finances with real-time tracking, intelligent categorization, and
+              actionable insights.
+            </p>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Quick Links</h3>
+            <nav class="footer__links" aria-label="Footer quick links">
+              <a href="index.html" class="footer__link">Home</a>
+              <a href="about.html" class="footer__link">About Us</a>
+              <a href="features.html" class="footer__link">Features</a>
+              <a href="pricing.html" class="footer__link">Pricing</a>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Resources</h3>
+            <nav class="footer__links" aria-label="Footer resources">
+              <a href="gallery.html" class="footer__link">Gallery</a>
+              <a href="contact.html" class="footer__link">Contact</a>
+              <a href="#" class="footer__link">Help Center</a>
+              <a href="#" class="footer__link">Blog</a>
+            </nav>
+          </div>
+
+          <div class="footer__column">
+            <h3 class="footer__title">Legal</h3>
+            <nav class="footer__links" aria-label="Footer legal">
+              <a href="#" class="footer__link">Privacy Policy</a>
+              <a href="#" class="footer__link">Terms of Service</a>
+              <a href="#" class="footer__link">Cookie Policy</a>
+              <a href="#" class="footer__link">Security</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            &copy; 2025 Smart Expense Tracking System. All rights reserved.
+            <br />
+            Assessment 3 - Student ID: 20034038
+          </p>
+          <div class="footer__socials">
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Facebook"
+            >
+              <span aria-hidden="true">f</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Twitter"
+            >
+              <span aria-hidden="true">𝕏</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on LinkedIn"
+            >
+              <span aria-hidden="true">in</span>
+            </a>
+            <a
+              href="#"
+              class="footer__social"
+              aria-label="Follow us on Instagram"
+            >
+              <span aria-hidden="true">📷</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
